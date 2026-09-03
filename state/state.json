@@ -1,0 +1,26 @@
+{
+  "current_stage": "stage2_capture_suggestion",
+  "stage1": {
+    "name": "需求结构化",
+    "status": "finished",
+    "input": {
+      "image_path": "data/input_images/test.jpg",
+      "customer_text_path": "data/input_text/customer_text.txt"
+    },
+    "output": {
+      "requirement_json_path": "data/requirement_result.json",
+      "summary": {
+        "task_type": "surface_defect_inspection",
+        "defect_types": [
+          "划痕",
+          "污渍",
+          "缺口"
+        ],
+        "need_defect_location": true,
+        "need_stage2_capture_suggestion": true
+      }
+    },
+    "error": null
+  },
+  "next_stage": "stage2_capture_suggestion"
+}

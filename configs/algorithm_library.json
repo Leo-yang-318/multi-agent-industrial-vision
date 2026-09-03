@@ -1,0 +1,27 @@
+{
+  "scratch": {
+    "preferred_skill": "traditional_defect_skill",
+    "backup_skill": "patchcore_skill",
+    "reason": "划痕属于线状缺陷，需要精确定位，优先使用传统划痕检测"
+  },
+  "missing_hole": {
+    "preferred_skill": "traditional_defect_skill",
+    "backup_skill": "",
+    "reason": "漏孔属于结构数量异常，采用孔洞数量检测"
+  },
+  "edge_missing": {
+    "preferred_skill": "traditional_defect_skill",
+    "backup_skill": "patchcore_skill",
+    "reason": "边缘缺料需要关注轮廓变化"
+  },
+  "extra_material": {
+    "preferred_skill": "patchcore_skill",
+    "backup_skill": "traditional_defect_skill",
+    "reason": "多料属于区域异常，异常检测具有较好泛化能力"
+  },
+  "cutting_error": {
+    "preferred_skill": "patchcore_skill",
+    "backup_skill": "traditional_defect_skill",
+    "reason": "切割错误属于结构异常"
+  }
+}

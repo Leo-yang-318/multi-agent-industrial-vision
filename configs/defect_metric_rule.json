@@ -1,0 +1,47 @@
+{
+  "scratch": {
+    "shape": "line",
+    "main_metrics": [
+      "Recall",
+      "Score_Gap",
+      "Defect_Mean_Score"
+    ],
+    "reason": "划痕属于细长线状缺陷，重点评价是否发现异常以及热力响应"
+  },
+  "extra_material": {
+    "shape": "region",
+    "main_metrics": [
+      "IoU",
+      "Dice",
+      "Pixel_Recall",
+      "Score_Gap"
+    ],
+    "reason": "多料属于区域型缺陷，需要评价预测区域覆盖程度"
+  },
+  "edge_missing": {
+    "shape": "edge",
+    "main_metrics": [
+      "Recall",
+      "Boundary_Score",
+      "Score_Gap"
+    ],
+    "reason": "边缘缺料发生在轮廓区域，需要关注边界异常"
+  },
+  "cutting_error": {
+    "shape": "line",
+    "main_metrics": [
+      "Recall",
+      "Defect_Mean_Score",
+      "Score_Gap"
+    ],
+    "reason": "切割错误属于结构异常，重点关注异常响应"
+  },
+  "missing_hole": {
+    "shape": "structure",
+    "main_metrics": [
+      "Hole_Count_Accuracy",
+      "Missing_Hole_Recall"
+    ],
+    "reason": "漏孔属于结构数量异常，采用孔洞检测评价"
+  }
+}

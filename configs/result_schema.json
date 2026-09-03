@@ -1,0 +1,11 @@
+{
+  "algorithm": "",
+  "defect_type": "",
+  "has_defect": true,
+  "metrics": {
+    "recall": 0,
+    "precision": 0,
+    "score_gap": 0
+  },
+  "visual_result": ""
+}
